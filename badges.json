@@ -1,0 +1,249 @@
+{
+  "groups": [
+    {
+      "id": "special-tags",
+      "name": "Special Tags",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "source",
+      "name": "Source",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "imax",
+      "name": "IMAX",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "dynamic-range",
+      "name": "Dynamic Range",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    },
+    {
+      "id": "audio",
+      "name": "Audio",
+      "color": "#00000000",
+      "borderColor": "#00000000",
+      "isExpanded": true
+    }
+  ],
+  "filters": [
+    {
+      "id": "seadex",
+      "groupId": "special-tags",
+      "name": "SeaDex",
+      "pattern": "(?i)(?:\\bseadex\\b|ᴀʟᴛ\\s+ʀᴇʟᴇᴀsᴇ|ʙᴇsᴛ\\s+ʀᴇʟᴇᴀsᴇ|alt\\s+release|best\\s+release)",
+      "imageURL": "https://raw.githubusercontent.com/intimid/nuviobadges/main/BadgeIcons/seadex.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    }, 
+    {
+      "id": "blu-ray-disc",
+      "groupId": "source",
+      "name": "Blu-ray Disc",
+      "pattern": "(?i)^(?=.*\\b(?:blu[-_. ]?ray|b[rd][-_. ]?rip)\\b)(?!.*\\bremux\\b)",
+      "imageURL": "https://raw.githubusercontent.com/intimid/nuviobadges/main/BadgeIcons/bluray.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "imax-enhanced",
+      "groupId": "imax",
+      "name": "IMAX Enhanced",
+      "pattern": "(?i)\\bimax[\\s._-]?enhanced\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/imax_enhanced.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "imax",
+      "groupId": "imax",
+      "name": "IMAX",
+      "pattern": "(?i)^(?=.*\\bimax\\b)(?!.*\\benhanced\\b)",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/imax.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "dolby-vision",
+      "groupId": "dynamic-range",
+      "name": "Dolby Vision",
+      "pattern": "(?i)\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dolby_vision.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "hdr10-plus",
+      "groupId": "dynamic-range",
+      "name": "HDR10+",
+      "pattern": "(?i)^(?!.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)(?=.*\\bhdr[\\s._-]?10[\\s._-]?(?:\\+|plus|p)(?:\\b|[^a-z0-9]))",
+      "imageURL": "https://raw.githubusercontent.com/intimid/nuviobadges/main/BadgeIcons/hdr10plus.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "hdr10",
+      "groupId": "dynamic-range",
+      "name": "HDR10",
+      "pattern": "(?i)^(?!.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)(?=.*\\bhdr[\\s._-]?10\\b)(?!.*\\bhdr[\\s._-]?10[\\s._-]?(?:\\+|plus|p)(?:\\b|[^a-z0-9]))",
+      "imageURL": "https://raw.githubusercontent.com/intimid/nuviobadges/main/BadgeIcons/hdr10.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "hdr",
+      "groupId": "dynamic-range",
+      "name": "HDR",
+      "pattern": "(?i)^(?!.*\\b(?:dv|dovi|dolby[\\s._-]?vision)\\b)(?=.*\\bhdr\\b)(?!.*\\bhdr[\\s._-]?10)",
+      "imageURL": "https://raw.githubusercontent.com/intimid/nuviobadges/main/BadgeIcons/hdr.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "dolby-atmos",
+      "groupId": "audio",
+      "name": "Dolby Atmos",
+      "pattern": "(?i)\\batmos\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dolby_atmos.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "dolby-digital-plus",
+      "groupId": "audio",
+      "name": "Dolby Digital Plus",
+      "pattern": "(?i)^(?=.*\\b(?:ddp|dd\\+|eac-?3|e-?ac-?3)\\b)(?!.*\\btrue[\\s._-]?hd\\b)",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dolby_digital_plus.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "dolby-digital",
+      "groupId": "audio",
+      "name": "Dolby Digital",
+      "pattern": "(?i)^(?=.*\\b(?:dd[25][. ][01]|ac-?3)\\b)(?!.*\\b(?:ddp|dd\\+|eac-?3|e-?ac-?3)\\b)(?!.*\\batmos\\b)(?!.*\\btrue[\\s._-]?hd\\b)",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dolby_digital.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "truehd",
+      "groupId": "audio",
+      "name": "TrueHD",
+      "pattern": "(?i)\\btrue[\\s._-]?hd\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/truehd.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "dts-x",
+      "groupId": "audio",
+      "name": "DTS:X",
+      "pattern": 	"(?i)\\bdts[-_.: ]?x\\b",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dts_x.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    }, 
+    {
+      "id": "dts-hd-master-audio",
+      "groupId": "audio",
+      "name": "DTS-HD Master Audio",
+      "pattern": "(?i)^(?=.*\\bdts[-_. ]?(?:hd[-_. ]?)?ma\\b)(?!.*\\bdts[-_.: ]?x\\b)",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dts_hd_master_audio.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "dts-hd",
+      "groupId": "audio",
+      "name": "DTS-HD",
+      "pattern": "(?i)^(?=.*\\bdts[-_. ]?hd\\b)(?!.*\\bdts[-_. ]?(?:hd[-_. ]?)?ma\\b)(?!.*\\bdts[-_.: ]?x\\b)",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dts_hd.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    },
+    {
+      "id": "dts",
+      "groupId": "audio",
+      "name": "DTS",
+      "pattern": "(?i)^(?=.*\\bdts\\b)(?!.*\\bdts[-_. ]?(?:hd|ma|xll|x)\\b)",
+      "imageURL": "https://raw.githubusercontent.com/leonevz/Elite-Badges/main/Badges/dts.png",
+      "tagColor": "#00000000",
+      "borderColor": "#00000000",
+      "textColor": "#00000000",
+      "tagStyle": "filled and bordered",
+      "isEnabled": true,
+      "type": "filter"
+    }
+  ]
+}
